@@ -1,0 +1,48 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { spawn } from "node:child_process";
+
+const port = 4513;
+let server;
+
+test.before(async () => {
+  server = spawn("npm", ["run", "start", "--", "--port", String(port)], { stdio: "ignore" });
+  for (let i = 0; i < 40; i++) {
+    try { const response = await fetch(`http://localhost:${port}/`); if (response.ok) return; } catch {}
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
+  throw new Error("site did not start");
+});
+
+test.after(() => server?.kill());
+
+async function page(path) {
+  const response = await fetch(`http://localhost:${port}${path}`);
+  assert.equal(response.status, 200);
+  return response.text();
+}
+
+test("product page exposes real value and only approved public routes", async () => {
+  const html = await page("/");
+  assert.match(html, /每一小时/);
+  assert.match(html, /工资条能核对/);
+  assert.match(html, /href="\/privacy"/);
+  assert.match(html, /href="\/support"/);
+  assert.doesNotMatch(html, /18092635599/);
+});
+
+test("privacy page matches the local-first and StoreKit data model", async () => {
+  const html = await page("/privacy");
+  assert.match(html, /不包含广告、第三方分析/);
+  assert.match(html, /Apple StoreKit/);
+  assert.match(html, /App Group/);
+  assert.match(html, /1515939993@qq.com/);
+});
+
+test("support page covers paid restoration, data preservation and widget recovery", async () => {
+  const html = await page("/support");
+  assert.match(html, /恢复购买/);
+  assert.match(html, /数据会消失吗/);
+  assert.match(html, /桌面小组件没有更新/);
+  assert.match(html, /1515939993@qq.com/);
+});
