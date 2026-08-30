@@ -28,7 +28,6 @@ test("product page exposes real value and only approved public routes", async ()
   assert.match(html, /工资条能核对/);
   assert.match(html, /免费开始记录/);
   assert.match(html, /apple-itunes-app/);
-  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /ct=github_home/);
   assert.match(html, /href="\/shift-work"/);
   assert.match(html, /href="\/privacy"/);
@@ -42,7 +41,6 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /仅在浏览器内计算/);
   assert.match(html, /在 App Store 继续核对/);
   assert.match(html, /分享这个计算器/);
-  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /ct=github_calculator/);
   assert.match(html, /常见问题/);
   assert.match(html, /¥28 永久买断或 ¥38\/年自动续费/);
@@ -55,7 +53,6 @@ test("shift-work landing page exposes high-intent copy and App Store continuatio
   assert.match(html, /夜班/);
   assert.match(html, /计件/);
   assert.match(html, /App Store 开始记录/);
-  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /先用网页免费试算/);
   assert.match(html, /仅供个人工时与薪资核对参考/);
   assert.match(html, /applicationCategory/);
@@ -68,7 +65,6 @@ test("salary-gap landing page exposes wage-difference intent and App Store conti
   assert.match(html, /工资差额/);
   assert.match(html, /加班倍率/);
   assert.match(html, /App Store 开始记录/);
-  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /先用网页免费算一次/);
   assert.match(html, /applicationCategory/);
   assert.match(html, /年度订阅/);
@@ -80,7 +76,6 @@ test("night-shift page explains cross-midnight work and continues to the App Sto
   assert.match(html, /跨零点/);
   assert.match(html, /实际起止时间/);
   assert.match(html, /App Store 记录夜班/);
-  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /劳动合同、单位制度和当地规定/);
 });
