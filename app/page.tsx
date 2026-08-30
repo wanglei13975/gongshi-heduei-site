@@ -112,7 +112,10 @@ export default function Home() {
         <div>
           <p className="eyebrow dark"><span /> 高级功能</p>
           <h2>简单记录免费。<br />复杂工作，也有章法。</h2>
-          <p className="premiumNote">可选择一次性购买或年度订阅，实际价格与可用性以 App Store 展示为准。</p>
+          <p className="premiumNote">当前门店展示：永久买断 ¥28，年度订阅 ¥38/年。年度订阅自动续费；实际价格与可用性以 App Store 最终展示为准。</p>
+          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
+            查看方案并购买 <span>↗</span>
+          </a>
         </div>
         <ul>{paidFeatures.map((item) => <li key={item}>{item}</li>)}</ul>
       </section>
