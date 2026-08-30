@@ -2,6 +2,21 @@
 import type { Metadata } from "next";
 
 const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "工时核对",
+  operatingSystem: "iOS",
+  applicationCategory: "UtilitiesApplication",
+  description: "记录倒班、夜班、加班和计件，按自己的计薪规则算出期望工资，再核对工资条差额。",
+  url: "https://wanglei13975.github.io/gongshi-heduei-site/shift-work/",
+  installUrl: appStoreURL,
+  offers: [
+    { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录与简单计薪" },
+    { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断" },
+    { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度订阅" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "倒班工资核对｜夜班、加班与工资条差额",
@@ -17,6 +32,7 @@ export const metadata: Metadata = {
 export default function ShiftWorkPage() {
   return (
     <main className="intentPage">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <nav className="nav" aria-label="主导航">
         <a className="brand" href="/">工时核对</a>
         <div className="navLinks">

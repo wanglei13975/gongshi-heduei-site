@@ -55,6 +55,8 @@ test("shift-work landing page exposes high-intent copy and App Store continuatio
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /先用网页免费试算/);
   assert.match(html, /仅供个人工时与薪资核对参考/);
+  assert.match(html, /applicationCategory/);
+  assert.match(html, /永久买断/);
 });
 
 test("privacy page matches the local-first and StoreKit data model", async () => {
