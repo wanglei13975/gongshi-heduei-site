@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     title: "倒班工资，按你的规则核对",
     description: "把班次、倍率、计件和补贴扣款记清楚，再与工资条逐项核对。",
     type: "website",
+    images: [{ url: "/og.png", width: 1728, height: 910, alt: "工时核对——倒班工资核对" }],
   },
 };
 

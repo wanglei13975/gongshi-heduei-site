@@ -7,6 +7,12 @@ const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E
 export const metadata = {
   title: "工资差额计算器｜工时核对",
   description: "先用工资差额计算器估算期望工资，再用工时核对记录倒班、加班、计件、补贴和扣款。计算在浏览器本地完成。",
+  openGraph: {
+    title: "工资差额计算器｜工时核对",
+    description: "先算期望工资，再与工资条实发金额核对差额。",
+    type: "website",
+    images: [{ url: "/og.png", width: 1728, height: 910, alt: "工时核对——工资差额计算器" }],
+  },
 };
 
 export default function Calculator() {

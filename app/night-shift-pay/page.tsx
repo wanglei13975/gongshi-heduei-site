@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     title: "夜班工资怎么算？先把跨零点班次记清楚",
     description: "按实际工作时间拆分夜班，再核对加班、补贴和工资条差额。",
     type: "article",
+    images: [{ url: "/og.png", width: 1728, height: 910, alt: "工时核对——夜班工资核对" }],
   },
 };
 

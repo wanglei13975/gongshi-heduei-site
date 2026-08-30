@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     title: "工资条少发怎么办？先把差额算清楚",
     description: "把每个班次和每项收入记下来，再与工资条逐项核对。",
     type: "website",
+    images: [{ url: "/og.png", width: 1728, height: 910, alt: "工时核对——工资条差额核对" }],
   },
 };
 
