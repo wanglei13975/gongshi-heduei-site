@@ -31,6 +31,13 @@ test("product page exposes real value and only approved public routes", async ()
   assert.doesNotMatch(html, /18092635599/);
 });
 
+test("calculator page exposes local calculation and App Store continuation", async () => {
+  const html = await page("/calculator");
+  assert.match(html, /工资差额计算器/);
+  assert.match(html, /仅在浏览器内计算/);
+  assert.match(html, /在 App Store 继续核对/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);
