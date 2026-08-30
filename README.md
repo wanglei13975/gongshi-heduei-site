@@ -15,6 +15,10 @@
 - [隐私政策](https://wanglei13975.github.io/gongshi-heduei-site/privacy/)
 - [帮助与支持](https://wanglei13975.github.io/gongshi-heduei-site/support/)
 
+## 付费方案
+
+基础记录和简单计薪可以免费开始。复杂计薪规则、完整核对历史、趋势统计和高级小组件，可在 App 内选择 ¥28 永久买断或 ¥38/年自动续费订阅；实际价格与可用性以 App Store 最终展示为准。
+
 ## 产品原则
 
 - 工时与工资数据默认只保存在设备上
