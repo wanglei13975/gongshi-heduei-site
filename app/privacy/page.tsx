@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- GitHub Pages static export needs plain anchors with the repository base path. */
 export default function Privacy() {
   return <main className="legal">
     <a className="back" href="/">← 返回工时核对</a>

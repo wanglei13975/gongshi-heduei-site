@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- GitHub Pages static export needs plain anchors with the repository base path. */
 import Image from "next/image";
 
 const features = [
