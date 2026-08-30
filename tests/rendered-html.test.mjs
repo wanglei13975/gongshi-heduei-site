@@ -45,6 +45,17 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /复杂规则、完整历史、趋势统计和高级小组件/);
 });
 
+test("shift-work landing page exposes high-intent copy and App Store continuation", async () => {
+  const html = await page("/shift-work");
+  assert.match(html, /倒班工资/);
+  assert.match(html, /夜班/);
+  assert.match(html, /计件/);
+  assert.match(html, /App Store 开始记录/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /先用网页免费试算/);
+  assert.match(html, /仅供个人工时与薪资核对参考/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);
