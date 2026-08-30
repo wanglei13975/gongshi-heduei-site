@@ -33,9 +33,10 @@ jobs:
         run: |
           rm -rf _site
           cp -R dist/client _site
-          mkdir -p _site/calculator _site/privacy _site/support
+          mkdir -p _site/calculator _site/privacy _site/shift-work _site/support
           cp _site/calculator.html _site/calculator/index.html
           cp _site/privacy.html _site/privacy/index.html
+          cp _site/shift-work.html _site/shift-work/index.html
           cp _site/support.html _site/support/index.html
           find _site -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.json' \) -print0 \
             | xargs -0 perl -pi -e 's#(["=])/#$1/gongshi-heduei-site/#g'
