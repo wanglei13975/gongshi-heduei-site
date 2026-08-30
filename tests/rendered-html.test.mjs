@@ -8,7 +8,7 @@ let server;
 test.before(async () => {
   server = spawn("npm", ["run", "start", "--", "--port", String(port)], { stdio: "ignore" });
   for (let i = 0; i < 40; i++) {
-    try { const response = await fetch(`http://localhost:${port}/`); if (response.ok) return; } catch {}
+    try { const response = await fetch(`http://localhost:${port}/`); if (response.ok) return; } catch { /* server is still starting */ }
     await new Promise((resolve) => setTimeout(resolve, 250));
   }
   throw new Error("site did not start");

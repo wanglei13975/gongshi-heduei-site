@@ -26,6 +26,8 @@ const paidFeatures = [
   "桌面小组件查看本月期望薪资与工时",
 ];
 
+const appStoreURL = "https://apps.apple.com/cn/app/id6800185417";
+
 export default function Home() {
   return (
     <main>
@@ -49,7 +51,10 @@ export default function Home() {
           <div className="trustRow" aria-label="产品特点">
             <span>本地优先</span><span>无广告</span><span>不追踪</span>
           </div>
-          <p className="availability">即将登陆 App Store · iPhone 专属</p>
+          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
+            在 App Store 打开工时核对 <span>↗</span>
+          </a>
+          <p className="availability">已上架 App Store · iPhone 专属</p>
         </div>
         <div className="heroStage" aria-label="工时核对桌面组件预览">
           <div className="orbit orbitOne" />
