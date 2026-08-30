@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages -- GitHub Pages static export needs plain anchors with the repository base path. */
+const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_privacy&mt=8";
+
 export default function Privacy() {
   return <main className="legal">
     <a className="back" href="/">← 返回工时核对</a>
@@ -30,5 +32,6 @@ export default function Privacy() {
 
     <h2>8. 政策变更与联系</h2>
     <p>若隐私处理方式发生实质变化，我们会更新本页与生效日期。隐私问题请发送邮件至 <a className="inlineLink" href="mailto:1515939993@qq.com">1515939993@qq.com</a>，或访问<a className="inlineLink" href="/support">支持页面</a>。</p>
+    <p><a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 开始记录 <span>↗</span></a></p>
   </main>;
 }

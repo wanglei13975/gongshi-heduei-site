@@ -29,9 +29,27 @@ const paidFeatures = [
 
 const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_home&mt=8";
 
+const productStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "工时核对",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "iOS",
+  description: "记录班次、工时与计件，按自己的计薪规则计算期望薪资，并核对工资条差额。",
+  image: "https://wanglei13975.github.io/gongshi-heduei-site/app-icon.png",
+  url: "https://wanglei13975.github.io/gongshi-heduei-site/",
+  downloadUrl: appStoreURL,
+  offers: [
+    { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录和简单计薪" },
+    { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断高级功能" },
+    { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度自动续费订阅" },
+  ],
+};
+
 export default function Home() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productStructuredData) }} />
       <nav className="nav" aria-label="主导航">
         <a className="brand" href="/">
           <Image src="/app-icon.png" width={42} height={42} alt="工时核对图标" priority />

@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages -- GitHub Pages static export needs plain anchors with the repository base path. */
+const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_support&mt=8";
+
 export default function Support() {
   return <main className="legal">
     <a className="back" href="/">← 返回工时核对</a>
@@ -29,6 +31,7 @@ export default function Support() {
 
     <h2>联系我们</h2>
     <p>请邮件发送 iOS 版本、工时核对版本、问题发生步骤和可公开的截图至 <a className="inlineLink" href="mailto:1515939993@qq.com">1515939993@qq.com</a>。请先遮盖工资、单位、备注等私密信息；我们不会索要 Apple ID 密码、验证码或银行卡资料。</p>
+    <p><a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 下载工时核对 <span>↗</span></a></p>
     <p><a className="textLink" href="/privacy">查看隐私政策 <span>→</span></a></p>
   </main>;
 }
