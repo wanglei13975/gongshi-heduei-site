@@ -46,6 +46,31 @@ export default function Calculator() {
         </div>
       </section>
 
+      <section className="calculatorFaq" aria-labelledby="calculator-faq-title">
+        <div>
+          <p className="eyebrow"><span /> 常见问题</p>
+          <h2 id="calculator-faq-title">先把疑问问清楚，<br /><em>再决定要不要记录。</em></h2>
+        </div>
+        <div className="faqList">
+          <details open>
+            <summary>这个工资差额计算器适合什么情况？</summary>
+            <p>它适合先估算简单的工时 × 时薪差额。倒班倍率、加班、计件阶梯、补贴或扣款叠加时，建议在工时核对 App 中逐日记录。</p>
+          </details>
+          <details>
+            <summary>工时和工资数据会上传吗？</summary>
+            <p>本页的试算只在浏览器内完成，不上传输入内容。App 不要求注册，记录和核对历史默认保存在你的设备上。</p>
+          </details>
+          <details>
+            <summary>App 需要付费才能开始记录吗？</summary>
+            <p>基础记录和简单计薪可以先使用；复杂规则、完整历史、趋势统计和高级小组件可在 App 内选择永久买断或年度订阅。实际价格以 App Store 门店展示为准。</p>
+          </details>
+          <details>
+            <summary>计算结果可以作为工资或劳动争议结论吗？</summary>
+            <p>不能。本工具用于个人记录和核对参考，不替代劳动合同、单位制度、税务或劳动法律意见。</p>
+          </details>
+        </div>
+      </section>
+
       <footer className="calculatorFooter">
         <div className="brand"><Image src="/app-icon.png" width={36} height={36} alt="" /><span>工时核对</span></div>
         <p>把工时、薪资与工资条核对清楚。</p>
