@@ -39,6 +39,7 @@ export default function Home() {
         </a>
         <div className="navLinks">
           <a href="/calculator">快速试算</a>
+          <a href="/shift-work">倒班核对</a>
           <a href="#features">功能</a>
           <a href="/privacy">隐私</a>
           <a href="/support">支持</a>

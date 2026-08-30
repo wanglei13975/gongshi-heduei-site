@@ -29,6 +29,7 @@ test("product page exposes real value and only approved public routes", async ()
   assert.match(html, /免费开始记录/);
   assert.match(html, /apple-itunes-app/);
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /href="\/shift-work"/);
   assert.match(html, /href="\/privacy"/);
   assert.match(html, /href="\/support"/);
   assert.doesNotMatch(html, /18092635599/);
