@@ -9,6 +9,7 @@
 - [产品介绍](https://wanglei13975.github.io/gongshi-heduei-site/)
 - [倒班工资核对：夜班、加班与工资条差额](https://wanglei13975.github.io/gongshi-heduei-site/shift-work/)
 - [工资差额快速试算](https://wanglei13975.github.io/gongshi-heduei-site/calculator/)
+- [夜班工资怎么算：跨零点工时核对](https://wanglei13975.github.io/gongshi-heduei-site/night-shift-pay/)
 - [工资条少发怎么办：工资差额核对](https://wanglei13975.github.io/gongshi-heduei-site/salary-gap/)
 - [在 App Store 下载工时核对](https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572)
 - [隐私政策](https://wanglei13975.github.io/gongshi-heduei-site/privacy/)

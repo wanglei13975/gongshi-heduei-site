@@ -71,6 +71,17 @@ test("salary-gap landing page exposes wage-difference intent and App Store conti
   assert.match(html, /年度订阅/);
 });
 
+test("night-shift page explains cross-midnight work and continues to the App Store", async () => {
+  const html = await page("/night-shift-pay");
+  assert.match(html, /夜班工资怎么算/);
+  assert.match(html, /跨零点/);
+  assert.match(html, /实际起止时间/);
+  assert.match(html, /App Store 记录夜班/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /application\/ld\+json/);
+  assert.match(html, /劳动合同、单位制度和当地规定/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);

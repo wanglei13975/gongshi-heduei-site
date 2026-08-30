@@ -41,6 +41,7 @@ export default function Home() {
           <a href="/calculator">快速试算</a>
           <a href="/shift-work">倒班核对</a>
           <a href="/salary-gap">工资差额</a>
+          <a href="/night-shift-pay">夜班怎么算</a>
           <a href="#features">功能</a>
           <a href="/privacy">隐私</a>
           <a href="/support">支持</a>
