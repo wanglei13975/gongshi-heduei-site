@@ -73,6 +73,7 @@ export default function QuickCheck() {
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 继续核对 <span>↗</span></a>
           <button className="shareCta" type="button" onClick={shareCalculator}>分享这个计算器 <span>↗</span></button>
         </div>
+        <p className="quickCheckPrice">基础记录免费；完整历史、复杂规则、趋势和小组件可选 ¥28 永久买断或 ¥38/年自动续费。</p>
         <p className="shareStatus" role="status" aria-live="polite">{shareStatus}</p>
       </div>
     </section>
