@@ -21,6 +21,7 @@ export default function QuickCheck() {
   const [hours, setHours] = useState("160");
   const [rate, setRate] = useState("60");
   const [paid, setPaid] = useState("9000");
+  const [shareStatus, setShareStatus] = useState("");
   const result = useMemo(() => {
     const expected = numberOrZero(hours) * numberOrZero(rate);
     const difference = expected - numberOrZero(paid);
@@ -28,6 +29,26 @@ export default function QuickCheck() {
   }, [hours, rate, paid]);
 
   const differenceLabel = result.difference >= 0 ? "按这组数字，可能少发" : "按这组数字，可能多发";
+
+  async function shareCalculator() {
+    const shareData = {
+      title: "工资差额计算器｜工时核对",
+      text: "先算清楚工资差额，再用工时核对记录倒班、加班和计件。",
+      url: window.location.href,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        setShareStatus("已打开分享面板");
+        return;
+      }
+      await navigator.clipboard.writeText(shareData.url);
+      setShareStatus("链接已复制");
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      setShareStatus("暂时无法分享，请复制浏览器地址");
+    }
+  }
 
   return (
     <section className="quickCheck" aria-labelledby="quick-check-title">
@@ -48,7 +69,11 @@ export default function QuickCheck() {
           <b className={result.difference >= 0 ? "differenceShort" : "differenceOver"}>{differenceLabel} {money(Math.abs(result.difference))}</b>
         </div>
         <p className="quickCheckNote">仅在浏览器内计算，不上传输入内容。复杂计薪请使用 App 内的真实记录和规则。</p>
-        <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 继续核对 <span>↗</span></a>
+        <div className="quickCheckActions">
+          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 继续核对 <span>↗</span></a>
+          <button className="shareCta" type="button" onClick={shareCalculator}>分享这个计算器 <span>↗</span></button>
+        </div>
+        <p className="shareStatus" role="status" aria-live="polite">{shareStatus}</p>
       </div>
     </section>
   );

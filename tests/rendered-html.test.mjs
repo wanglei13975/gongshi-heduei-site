@@ -36,6 +36,7 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /工资差额计算器/);
   assert.match(html, /仅在浏览器内计算/);
   assert.match(html, /在 App Store 继续核对/);
+  assert.match(html, /分享这个计算器/);
   assert.match(html, /常见问题/);
   assert.match(html, /复杂规则、完整历史、趋势统计和高级小组件/);
 });
