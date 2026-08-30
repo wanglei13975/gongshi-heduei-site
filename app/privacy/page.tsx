@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 export default function Privacy() {
   return <main className="legal">
-    <Link className="back" href="/">← 返回工时核对</Link>
+    <a className="back" href="/">← 返回工时核对</a>
     <p className="legalKicker">PRIVACY POLICY</p>
     <h1>隐私政策</h1>
     <p className="date">生效日期：2026 年 8 月 9 日</p>
@@ -30,6 +28,6 @@ export default function Privacy() {
     <p>本应用不以儿童为目标，也不会主动收集儿童个人信息。</p>
 
     <h2>8. 政策变更与联系</h2>
-    <p>若隐私处理方式发生实质变化，我们会更新本页与生效日期。隐私问题请发送邮件至 <a className="inlineLink" href="mailto:1515939993@qq.com">1515939993@qq.com</a>，或访问<Link className="inlineLink" href="/support">支持页面</Link>。</p>
+    <p>若隐私处理方式发生实质变化，我们会更新本页与生效日期。隐私问题请发送邮件至 <a className="inlineLink" href="mailto:1515939993@qq.com">1515939993@qq.com</a>，或访问<a className="inlineLink" href="/support">支持页面</a>。</p>
   </main>;
 }

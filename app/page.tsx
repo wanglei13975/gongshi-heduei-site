@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const features = [
   {
@@ -32,14 +31,14 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="主导航">
-        <Link className="brand" href="/">
+        <a className="brand" href="/">
           <Image src="/app-icon.png" width={42} height={42} alt="工时核对图标" priority />
           <span>工时核对</span>
-        </Link>
+        </a>
         <div className="navLinks">
           <a href="#features">功能</a>
-          <Link href="/privacy">隐私</Link>
-          <Link href="/support">支持</Link>
+          <a href="/privacy">隐私</a>
+          <a href="/support">支持</a>
         </div>
       </nav>
 
@@ -125,7 +124,7 @@ export default function Home() {
         <div>
           <p>无需注册账户。工时、计薪规则、工资条金额和核对历史默认只保存在设备上。没有广告，没有第三方分析，也不跨 App 追踪。</p>
           <p>应用内购买由 Apple 处理；桌面小组件只共享当前月汇总，不共享单条记录、备注或工资条。</p>
-          <Link className="textLink" href="/privacy">阅读完整隐私政策 <span>→</span></Link>
+          <a className="textLink" href="/privacy">阅读完整隐私政策 <span>→</span></a>
         </div>
       </section>
 
@@ -137,7 +136,7 @@ export default function Home() {
       <footer>
         <div className="brand"><Image src="/app-icon.png" width={36} height={36} alt="" /><span>工时核对</span></div>
         <p>把工时、薪资与工资条核对清楚。</p>
-        <div><Link href="/privacy">隐私政策</Link><Link href="/support">帮助与支持</Link></div>
+        <div><a href="/privacy">隐私政策</a><a href="/support">帮助与支持</a></div>
       </footer>
     </main>
   );

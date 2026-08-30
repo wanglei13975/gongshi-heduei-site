@@ -26,7 +26,7 @@ jobs:
           node-version: 22
           cache: npm
       - name: Build and test
-        run: npm test
+        run: GITHUB_PAGES=1 npm test
       - name: Prepare GitHub Pages artifact
         run: |
           rm -rf _site
@@ -34,6 +34,8 @@ jobs:
           mkdir -p _site/privacy _site/support
           cp _site/privacy.html _site/privacy/index.html
           cp _site/support.html _site/support/index.html
+          find _site -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.json' \) -print0 \
+            | xargs -0 perl -pi -e 's#(["=])/#$1/gongshi-heduei-site/#g'
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

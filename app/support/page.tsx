@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 export default function Support() {
   return <main className="legal">
-    <Link className="back" href="/">← 返回工时核对</Link>
+    <a className="back" href="/">← 返回工时核对</a>
     <p className="legalKicker">HELP & SUPPORT</p>
     <h1>帮助与支持</h1>
     <p className="legalLead">遇到问题时，先从下面的常见场景开始。你的工资与工时数据不会自动上传给我们。</p>
@@ -30,6 +28,6 @@ export default function Support() {
 
     <h2>联系我们</h2>
     <p>请邮件发送 iOS 版本、工时核对版本、问题发生步骤和可公开的截图至 <a className="inlineLink" href="mailto:1515939993@qq.com">1515939993@qq.com</a>。请先遮盖工资、单位、备注等私密信息；我们不会索要 Apple ID 密码、验证码或银行卡资料。</p>
-    <p><Link className="textLink" href="/privacy">查看隐私政策 <span>→</span></Link></p>
+    <p><a className="textLink" href="/privacy">查看隐私政策 <span>→</span></a></p>
   </main>;
 }
