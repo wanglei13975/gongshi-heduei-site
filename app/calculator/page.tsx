@@ -3,6 +3,32 @@ import Image from "next/image";
 import QuickCheck from "../QuickCheck";
 
 const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_calculator&mt=8";
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "这个工资差额计算器适合什么情况？",
+      acceptedAnswer: { "@type": "Answer", text: "它适合先估算简单的工时乘时薪差额。倒班倍率、加班、计件阶梯、补贴或扣款叠加时，建议在工时核对 App 中逐日记录。" },
+    },
+    {
+      "@type": "Question",
+      name: "工时和工资数据会上传吗？",
+      acceptedAnswer: { "@type": "Answer", text: "网页试算只在浏览器内完成，不上传输入内容。App 不要求注册，记录和核对历史默认保存在你的设备上。" },
+    },
+    {
+      "@type": "Question",
+      name: "App 需要付费才能开始记录吗？",
+      acceptedAnswer: { "@type": "Answer", text: "基础记录和简单计薪可以先使用；复杂规则、完整历史、趋势统计和高级小组件可在 App 内选择永久买断或年度订阅。实际价格以 App Store 门店展示为准。" },
+    },
+    {
+      "@type": "Question",
+      name: "计算结果可以作为工资或劳动争议结论吗？",
+      acceptedAnswer: { "@type": "Answer", text: "不能。本工具用于个人记录和核对参考，不替代劳动合同、单位制度、税务或劳动法律意见。" },
+    },
+  ],
+};
 
 export const metadata = {
   title: "工资差额计算器｜工时核对",
@@ -18,6 +44,7 @@ export const metadata = {
 export default function Calculator() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
       <nav className="nav" aria-label="主导航">
         <a className="brand" href="/">
           <Image src="/app-icon.png" width={42} height={42} alt="工时核对图标" priority />
