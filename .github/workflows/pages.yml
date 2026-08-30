@@ -33,8 +33,9 @@ jobs:
         run: |
           rm -rf _site
           cp -R dist/client _site
-          mkdir -p _site/calculator _site/night-shift-pay _site/privacy _site/salary-gap _site/shift-work _site/support
+          mkdir -p _site/calculator _site/hourly-worker-pay _site/night-shift-pay _site/privacy _site/salary-gap _site/shift-work _site/support
           cp _site/calculator.html _site/calculator/index.html
+          cp _site/hourly-worker-pay.html _site/hourly-worker-pay/index.html
           cp _site/night-shift-pay.html _site/night-shift-pay/index.html
           cp _site/privacy.html _site/privacy/index.html
           cp _site/salary-gap.html _site/salary-gap/index.html

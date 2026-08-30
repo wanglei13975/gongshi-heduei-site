@@ -80,6 +80,16 @@ test("night-shift page explains cross-midnight work and continues to the App Sto
   assert.match(html, /劳动合同、单位制度和当地规定/);
 });
 
+test("hourly-worker page exposes hourly-pay intent and App Store continuation", async () => {
+  const html = await page("/hourly-worker-pay");
+  assert.match(html, /小时工工资怎么算/);
+  assert.match(html, /实际工作/);
+  assert.match(html, /工资条/);
+  assert.match(html, /App Store 开始记录/);
+  assert.match(html, /github_hourly_worker/);
+  assert.match(html, /applicationCategory/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);
