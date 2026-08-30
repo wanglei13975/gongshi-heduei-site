@@ -59,6 +59,18 @@ test("shift-work landing page exposes high-intent copy and App Store continuatio
   assert.match(html, /永久买断/);
 });
 
+test("salary-gap landing page exposes wage-difference intent and App Store continuation", async () => {
+  const html = await page("/salary-gap");
+  assert.match(html, /工资条少发/);
+  assert.match(html, /工资差额/);
+  assert.match(html, /加班倍率/);
+  assert.match(html, /App Store 开始记录/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /先用网页免费算一次/);
+  assert.match(html, /applicationCategory/);
+  assert.match(html, /年度订阅/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);
