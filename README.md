@@ -7,6 +7,7 @@
 ## 公开页面
 
 - [产品介绍](https://wanglei13975.github.io/gongshi-heduei-site/)
+- [工资差额快速试算](https://wanglei13975.github.io/gongshi-heduei-site/calculator/)
 - [在 App Store 下载工时核对](https://apps.apple.com/cn/app/id6800185417)
 - [隐私政策](https://wanglei13975.github.io/gongshi-heduei-site/privacy/)
 - [帮助与支持](https://wanglei13975.github.io/gongshi-heduei-site/support/)
