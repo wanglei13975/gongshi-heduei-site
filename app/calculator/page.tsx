@@ -2,6 +2,8 @@
 import Image from "next/image";
 import QuickCheck from "../QuickCheck";
 
+const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572";
+
 export const metadata = {
   title: "工资差额计算器｜工时核对",
   description: "先用工资差额计算器估算期望工资，再用工时核对记录倒班、加班、计件、补贴和扣款。计算在浏览器本地完成。",
@@ -42,7 +44,7 @@ export default function Calculator() {
             <li>备份、恢复、CSV 导入导出始终免费</li>
             <li>复杂规则、完整历史、趋势和小组件可选择购买</li>
           </ul>
-          <p><a className="storeCta" href="https://apps.apple.com/cn/app/id6800185417" target="_blank" rel="noreferrer">下载工时核对 <span>↗</span></a></p>
+          <p><a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">下载工时核对 <span>↗</span></a></p>
         </div>
       </section>
 
