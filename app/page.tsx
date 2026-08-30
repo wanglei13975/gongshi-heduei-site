@@ -97,7 +97,7 @@ export default function Home() {
         <div><span>班次</span><span>×</span><span>倍率</span><span>+</span><span>计件</span><span>±</span><span>补贴扣款</span></div>
       </section>
 
-      <QuickCheck />
+      <QuickCheck campaign="github_home" />
 
       <section className="features" id="features">
         <div className="sectionIntro">

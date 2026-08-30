@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_calculator&mt=8";
+const appStoreURLBase = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417";
 
 function numberOrZero(value: string) {
   const parsed = Number(value);
@@ -17,7 +17,8 @@ function money(value: number) {
   }).format(value);
 }
 
-export default function QuickCheck() {
+export default function QuickCheck({ campaign = "github_calculator" }: { campaign?: string }) {
+  const appStoreURL = `${appStoreURLBase}?ct=${encodeURIComponent(campaign)}&mt=8`;
   const [hours, setHours] = useState("160");
   const [rate, setRate] = useState("60");
   const [paid, setPaid] = useState("9000");
