@@ -26,6 +26,8 @@ test("product page exposes real value and only approved public routes", async ()
   const html = await page("/");
   assert.match(html, /每一小时/);
   assert.match(html, /工资条能核对/);
+  assert.match(html, /免费开始记录/);
+  assert.match(html, /apple-itunes-app/);
   assert.match(html, /href="\/privacy"/);
   assert.match(html, /href="\/support"/);
   assert.doesNotMatch(html, /18092635599/);

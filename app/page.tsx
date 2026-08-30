@@ -56,7 +56,7 @@ export default function Home() {
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
             在 App Store 打开工时核对 <span>↗</span>
           </a>
-          <p className="availability">已上架 App Store · iPhone 专属</p>
+          <p className="availability">免费开始记录；复杂核对可选 ¥28 永久买断或 ¥38/年订阅 · 已上架 App Store</p>
         </div>
         <div className="heroStage" aria-label="工时核对桌面组件预览">
           <div className="orbit orbitOne" />
