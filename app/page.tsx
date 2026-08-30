@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages -- GitHub Pages static export needs plain anchors with the repository base path. */
 import Image from "next/image";
+import QuickCheck from "./QuickCheck";
 
 const features = [
   {
@@ -73,6 +74,8 @@ export default function Home() {
         <p>工资条只有一个结果，<br />你需要的是计算过程。</p>
         <div><span>班次</span><span>×</span><span>倍率</span><span>+</span><span>计件</span><span>±</span><span>补贴扣款</span></div>
       </section>
+
+      <QuickCheck />
 
       <section className="features" id="features">
         <div className="sectionIntro">
