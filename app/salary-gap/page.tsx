@@ -85,6 +85,7 @@ export default function SalaryGapPage() {
         <h2>先免费试算，<br />再决定是否长期记录。</h2>
         <p>网页计算器只在浏览器本地运行；App 无需注册，工时和工资数据默认保存在你的设备上。</p>
         <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">查看完整核对功能 <span>↗</span></a>
+        <p><a className="textLink" href="https://gist.github.com/wanglei13975/9bc6ad826f400276ed7f7e35f0c32bfa" target="_blank" rel="noreferrer">先看工资条核对清单 <span>↗</span></a></p>
         <p className="intentDisclaimer">计算结果仅供个人工时与薪资核对参考，不构成工资发放、税务、社保或劳动法律意见。</p>
       </section>
 
