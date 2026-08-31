@@ -79,7 +79,7 @@ export default function Home() {
             <span>本地优先</span><span>无广告</span><span>不追踪</span>
           </div>
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
-            在 App Store 打开工时核对 <span>↗</span>
+            9/1–9/25 ¥6 买断 · 打开 App Store <span>↗</span>
           </a>
           <p className="availability">免费开始记录；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅 · 已上架 App Store</p>
         </div>

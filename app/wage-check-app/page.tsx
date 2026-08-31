@@ -49,7 +49,7 @@ export default function WageCheckAppPage() {
         <h1>工资核对 App，<br /><em>把每一小时和工资条对上。</em></h1>
         <p className="intentLead">如果你正在找一款工资核对 App，可以先免费记录班次、工时和计件，再按自己的计薪规则算出期望金额，最后输入工资条实发金额，查看差额从哪里来。</p>
         <div className="intentActions">
-          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 免费下载 <span>↗</span></a>
+          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">9/1–9/25 ¥6 买断 · 免费下载 <span>↗</span></a>
           <a className="textLink" href="/calculator">先用网页免费试算 <span>→</span></a>
         </div>
         <p className="availability">基础记录和简单计薪免费；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅。</p>

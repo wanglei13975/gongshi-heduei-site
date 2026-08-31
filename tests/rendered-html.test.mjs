@@ -27,6 +27,7 @@ test("product page exposes real value and only approved public routes", async ()
   assert.match(html, /每一小时/);
   assert.match(html, /工资条能核对/);
   assert.match(html, /免费开始记录/);
+  assert.match(html, /9\/1–9\/25 ¥6 买断/);
   assert.match(html, /apple-itunes-app/);
   assert.match(html, /ct=github_home/);
   assert.match(html, /href="\/shift-work"/);
@@ -112,6 +113,7 @@ test("wage-check-app page exposes direct App Store intent and purchase path", as
   const html = await page("/wage-check-app");
   assert.match(html, /工资核对 App/);
   assert.match(html, /免费下载/);
+  assert.match(html, /9\/1–9\/25 ¥6 买断/);
   assert.match(html, /工资条/);
   assert.match(html, /github_wage_check_app/);
   assert.match(html, /applicationCategory/);
