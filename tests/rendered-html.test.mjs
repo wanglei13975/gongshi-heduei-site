@@ -90,6 +90,24 @@ test("hourly-worker page exposes hourly-pay intent and App Store continuation", 
   assert.match(html, /applicationCategory/);
 });
 
+test("overtime-pay page exposes overtime intent and App Store continuation", async () => {
+  const html = await page("/overtime-pay");
+  assert.match(html, /加班工资怎么算/);
+  assert.match(html, /平时、休息日与节假日/);
+  assert.match(html, /App Store 开始记录/);
+  assert.match(html, /github_overtime_pay/);
+  assert.match(html, /applicationCategory/);
+});
+
+test("piecework-pay page exposes piecework intent and App Store continuation", async () => {
+  const html = await page("/piecework-pay");
+  assert.match(html, /计件工资怎么算/);
+  assert.match(html, /阶梯单价/);
+  assert.match(html, /App Store 开始记录/);
+  assert.match(html, /github_piecework_pay/);
+  assert.match(html, /applicationCategory/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);

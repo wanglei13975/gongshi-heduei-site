@@ -61,6 +61,8 @@ export default function Home() {
           <a href="/salary-gap">工资差额</a>
           <a href="/hourly-worker-pay">小时工</a>
           <a href="/night-shift-pay">夜班怎么算</a>
+          <a href="/overtime-pay">加班工资</a>
+          <a href="/piecework-pay">计件工资</a>
           <a href="#features">功能</a>
           <a href="/privacy">隐私</a>
           <a href="/support">支持</a>
