@@ -82,6 +82,7 @@ export default function Home() {
             9/1–9/25 ¥6 买断 · 打开 App Store <span>↗</span>
           </a>
           <p className="availability">免费开始记录；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅 · 已上架 App Store</p>
+          <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥6 永久买断。</p>
         </div>
         <div className="heroStage" aria-label="工时核对桌面组件预览">
           <div className="orbit orbitOne" />

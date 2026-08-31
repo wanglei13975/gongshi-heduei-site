@@ -53,6 +53,7 @@ export default function WageCheckAppPage() {
           <a className="textLink" href="/calculator">先用网页免费试算 <span>→</span></a>
         </div>
         <p className="availability">基础记录和简单计薪免费；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅。</p>
+        <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥6 永久买断。</p>
       </section>
 
       <section className="intentSteps" aria-labelledby="wage-check-steps-title">

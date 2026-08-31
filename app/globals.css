@@ -18,3 +18,4 @@
 @media(max-width:560px){.hero h1{font-size:52px}.lead{font-size:17px}.heroStage{height:400px}.earningsCard{padding:25px}.earningsCard strong{font-size:39px}.privacyChip{bottom:35px}.screens{gap:7px}.screens figure img{border-radius:16px}.screens figcaption{display:none}.showcase{padding-bottom:95px}.privacyBand{padding:30px}.disclaimer{grid-template-columns:1fr;gap:8px}.legal{padding-top:45px}.calculatorIntro h1{font-size:52px}.calculatorIntro>p:not(.eyebrow){font-size:17px}.quickCheckFields{grid-template-columns:1fr}.quickCheckPanel{padding:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .quickCheckPrice{margin:12px 0 0;color:#b4c1ca;font-size:12px;line-height:1.65}
+.purchasePath{max-width:620px;margin:10px 0 0;color:#aab8c2;font-size:13px;line-height:1.7}.purchasePath strong{color:#d7e6eb}
