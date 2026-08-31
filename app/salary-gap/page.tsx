@@ -16,7 +16,7 @@ const structuredData = {
     installUrl: appStoreURL,
     offers: [
       { "@type": "Offer", price: "0", priceCurrency: "CNY" },
-      { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断" },
+      { "@type": "Offer", price: "6", priceCurrency: "CNY", description: "9 月 1 日至 25 日限时永久买断" },
       { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度订阅" },
     ],
   },
@@ -55,7 +55,7 @@ export default function SalaryGapPage() {
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 开始记录 <span>↗</span></a>
           <a className="textLink" href="/calculator">先用网页免费算一次 <span>→</span></a>
         </div>
-        <p className="availability">免费开始记录；复杂规则可选 ¥28 永久买断或 ¥38/年自动续费订阅。</p>
+        <p className="availability">免费开始记录；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年自动续费订阅。</p>
       </section>
 
       <section className="intentSteps" aria-labelledby="salary-gap-steps-title">

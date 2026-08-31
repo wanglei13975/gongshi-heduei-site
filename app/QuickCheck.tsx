@@ -74,7 +74,7 @@ export default function QuickCheck({ campaign = "github_calculator" }: { campaig
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 继续核对 <span>↗</span></a>
           <button className="shareCta" type="button" onClick={shareCalculator}>分享这个计算器 <span>↗</span></button>
         </div>
-        <p className="quickCheckPrice">基础记录免费；完整历史、复杂规则、趋势和小组件可选 ¥28 永久买断或 ¥38/年自动续费。</p>
+        <p className="quickCheckPrice">基础记录免费；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年自动续费。</p>
         <p className="shareStatus" role="status" aria-live="polite">{shareStatus}</p>
       </div>
     </section>

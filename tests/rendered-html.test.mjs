@@ -43,7 +43,7 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /分享这个计算器/);
   assert.match(html, /ct=github_calculator/);
   assert.match(html, /常见问题/);
-  assert.match(html, /¥28 永久买断或 ¥38\/年自动续费/);
+  assert.match(html, /¥6 永久买断/);
   assert.match(html, /复杂规则、完整历史、趋势统计和高级小组件/);
 });
 
@@ -115,7 +115,7 @@ test("wage-check-app page exposes direct App Store intent and purchase path", as
   assert.match(html, /工资条/);
   assert.match(html, /github_wage_check_app/);
   assert.match(html, /applicationCategory/);
-  assert.match(html, /¥28 永久买断或 ¥38\/年订阅/);
+  assert.match(html, /¥6 永久买断/);
 });
 
 test("privacy page matches the local-first and StoreKit data model", async () => {

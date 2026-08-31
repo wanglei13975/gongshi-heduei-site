@@ -41,7 +41,7 @@ const productStructuredData = {
   downloadUrl: appStoreURL,
   offers: [
     { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录和简单计薪" },
-    { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断高级功能" },
+    { "@type": "Offer", price: "6", priceCurrency: "CNY", description: "2026-09-01 至 2026-09-25 限时永久买断高级功能" },
     { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度自动续费订阅" },
   ],
 };
@@ -81,7 +81,7 @@ export default function Home() {
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
             在 App Store 打开工时核对 <span>↗</span>
           </a>
-          <p className="availability">免费开始记录；复杂核对可选 ¥28 永久买断或 ¥38/年订阅 · 已上架 App Store</p>
+          <p className="availability">免费开始记录；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅 · 已上架 App Store</p>
         </div>
         <div className="heroStage" aria-label="工时核对桌面组件预览">
           <div className="orbit orbitOne" />
@@ -141,7 +141,7 @@ export default function Home() {
         <div>
           <p className="eyebrow dark"><span /> 高级功能</p>
           <h2>简单记录免费。<br />复杂工作，也有章法。</h2>
-          <p className="premiumNote">当前门店展示：永久买断 ¥28，年度订阅 ¥38/年。年度订阅自动续费；实际价格与可用性以 App Store 最终展示为准。</p>
+          <p className="premiumNote">中国区 9 月 1 日至 25 日限时永久买断 ¥6，9 月 26 日起恢复 ¥28；年度订阅 ¥38/年并自动续费。实际价格与可用性以 App Store 最终展示为准。</p>
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
             查看方案并购买 <span>↗</span>
           </a>
