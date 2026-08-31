@@ -5,7 +5,7 @@ const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "工资条少发怎么办｜工资差额核对与记录",
+  name: "工资条核对｜工资条少发怎么办与工资差额记录",
   description: "按班次、工时、加班、计件、补贴和扣款算出期望工资，再与工资条实发金额核对差额。",
   url: "https://wanglei13975.github.io/gongshi-heduei-site/salary-gap/",
   mainEntity: {
@@ -23,11 +23,11 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
-  title: "工资条少发怎么办｜工资差额核对与记录",
+  title: "工资条核对｜工资条少发怎么办与工资差额记录",
   description: "按班次、工时、加班、计件、补贴和扣款算出期望工资，再与工资条实发金额核对差额。",
   alternates: { canonical: "/salary-gap" },
   openGraph: {
-    title: "工资条少发怎么办？先把差额算清楚",
+    title: "工资条怎么核对？先把差额算清楚",
     description: "把每个班次和每项收入记下来，再与工资条逐项核对。",
     type: "website",
     images: [{ url: "/og.png", width: 1728, height: 910, alt: "工时核对——工资条差额核对" }],
@@ -48,8 +48,8 @@ export default function SalaryGapPage() {
       </nav>
 
       <section className="intentHero">
-        <p className="eyebrow"><span /> 工资条差额核对</p>
-        <h1>工资条少发，<br /><em>先把差额算清楚。</em></h1>
+        <p className="eyebrow"><span /> 工资条核对与差额记录</p>
+        <h1>工资条怎么核对，<br /><em>先把差额算清楚。</em></h1>
         <p className="intentLead">不要只对着工资条猜哪里不对。把班次、工时、加班倍率、计件、补贴和扣款按实际情况记录下来，先算出你应得的金额，再和实发金额逐项比较。</p>
         <div className="intentActions">
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 开始记录 <span>↗</span></a>
