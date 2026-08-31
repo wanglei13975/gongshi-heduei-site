@@ -108,6 +108,16 @@ test("piecework-pay page exposes piecework intent and App Store continuation", a
   assert.match(html, /applicationCategory/);
 });
 
+test("wage-check-app page exposes direct App Store intent and purchase path", async () => {
+  const html = await page("/wage-check-app");
+  assert.match(html, /工资核对 App/);
+  assert.match(html, /免费下载/);
+  assert.match(html, /工资条/);
+  assert.match(html, /github_wage_check_app/);
+  assert.match(html, /applicationCategory/);
+  assert.match(html, /¥28 永久买断或 ¥38\/年订阅/);
+});
+
 test("privacy page matches the local-first and StoreKit data model", async () => {
   const html = await page("/privacy");
   assert.match(html, /不包含广告、第三方分析/);
