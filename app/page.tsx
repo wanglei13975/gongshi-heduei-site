@@ -71,6 +71,11 @@ export default function Home() {
         </div>
       </nav>
 
+      <div className="mobilePurchaseBar" aria-label="限时购买入口">
+        <span><strong>9/1–9/25 ¥6</strong><small>永久买断高级功能</small></span>
+        <a href={appStoreURL} target="_blank" rel="noreferrer">打开 App Store <span>↗</span></a>
+      </div>
+
       <section className="hero">
         <div className="heroCopy">
           <p className="eyebrow"><span /> 为认真工作的人，把账算清楚</p>
