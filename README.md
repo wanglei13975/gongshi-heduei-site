@@ -12,6 +12,7 @@
 - [夜班工资怎么算：跨零点工时核对](https://wanglei13975.github.io/gongshi-heduei-site/night-shift-pay/)
 - [工资条少发怎么办：工资差额核对](https://wanglei13975.github.io/gongshi-heduei-site/salary-gap/)
 - [小时工工资怎么算：工时记录与工资条核对](https://wanglei13975.github.io/gongshi-heduei-site/hourly-worker-pay/)
+- [小时工工资怎么算：工时与工资条差额指南（公开文章）](https://gist.github.com/wanglei13975/5b4275c6f55111239e89b6e05d2f8ad7)
 - [加班工资怎么算：平时、休息日与节假日工时核对](https://wanglei13975.github.io/gongshi-heduei-site/overtime-pay/)
 - [计件工资怎么算：计件、阶梯单价与补贴核对](https://wanglei13975.github.io/gongshi-heduei-site/piecework-pay/)
 - [工资核对 App：记录工时、加班与工资条差额](https://wanglei13975.github.io/gongshi-heduei-site/wage-check-app/)
