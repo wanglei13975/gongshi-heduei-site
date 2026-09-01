@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(publicSiteOrigin),
   title: "工时核对｜工时、薪资与工资条核对",
   description: "记录班次、工时与计件，按自己的计薪规则计算期望薪资，并核对工资条差额。数据本地保存，无广告、不追踪。",
+  alternates: { canonical: "/" },
   other: {
     "apple-itunes-app": "app-id=6800185417",
   },
