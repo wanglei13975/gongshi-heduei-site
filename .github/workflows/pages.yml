@@ -33,7 +33,7 @@ jobs:
         run: |
           rm -rf _site
           cp -R dist/client _site
-          mkdir -p _site/calculator _site/hourly-worker-pay _site/night-shift-pay _site/overtime-pay _site/piecework-pay _site/privacy _site/salary-gap _site/shift-work _site/support _site/wage-check-app
+          mkdir -p _site/calculator _site/hourly-worker-pay _site/night-shift-pay _site/overtime-pay _site/piecework-pay _site/privacy _site/salary-gap _site/salary-underpayment _site/shift-work _site/support _site/wage-check-app
           cp _site/calculator.html _site/calculator/index.html
           cp _site/hourly-worker-pay.html _site/hourly-worker-pay/index.html
           cp _site/night-shift-pay.html _site/night-shift-pay/index.html
@@ -41,6 +41,7 @@ jobs:
           cp _site/piecework-pay.html _site/piecework-pay/index.html
           cp _site/privacy.html _site/privacy/index.html
           cp _site/salary-gap.html _site/salary-gap/index.html
+          cp _site/salary-underpayment.html _site/salary-underpayment/index.html
           cp _site/shift-work.html _site/shift-work/index.html
           cp _site/support.html _site/support/index.html
           cp _site/wage-check-app.html _site/wage-check-app/index.html
