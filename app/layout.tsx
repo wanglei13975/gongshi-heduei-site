@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572&ct=github_mobile_cta&mt=8";
+
 const publicSiteOrigin = process.env.GITHUB_PAGES === "1"
   ? "https://wanglei13975.github.io/gongshi-heduei-site"
   : "https://gongshi-heduei.wanglei13975.chatgpt.site";
@@ -29,5 +31,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="zh-CN"><body>{children}</body></html>;
+  return <html lang="zh-CN"><body>{children}<div className="mobilePurchaseBar" aria-label="限时购买入口">
+    <span><strong>9/1–9/25 ¥6</strong><small>永久买断高级功能</small></span>
+    <a href={appStoreURL} target="_blank" rel="noreferrer">打开 App Store <span>↗</span></a>
+  </div></body></html>;
 }
