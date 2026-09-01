@@ -4,7 +4,7 @@
 
 工时核对面向倒班、小时工、计件工，以及需要自行核算工资的个人用户：按日期记录班次、工时、计件、补贴和扣款，使用自己的计薪规则计算期望薪资，再输入实发金额查看差额来源。
 
-> 中国区 9 月 1 日至 25 日限时 ¥6 永久买断高级功能，9 月 26 日起恢复 ¥28；[在 App Store 下载工时核对](https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572&ct=github_readme_top&mt=8)
+> 中国区 9 月 1 日至 25 日限时 ¥6 永久买断高级功能，9 月 26 日起恢复 ¥28；[在 App Store 下载工时核对](https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_readme_top&mt=8)
 
 ## 公开页面
 
@@ -19,7 +19,7 @@
 - [加班工资怎么算：平时、休息日与节假日工时核对](https://wanglei13975.github.io/gongshi-heduei-site/overtime-pay/)
 - [计件工资怎么算：计件、阶梯单价与补贴核对](https://wanglei13975.github.io/gongshi-heduei-site/piecework-pay/)
 - [工资核对 App：记录工时、加班与工资条差额](https://wanglei13975.github.io/gongshi-heduei-site/wage-check-app/)
-- [在 App Store 下载工时核对](https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572&ct=github_readme&mt=8)
+- [在 App Store 下载工时核对](https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_readme&mt=8)
 - [隐私政策](https://wanglei13975.github.io/gongshi-heduei-site/privacy/)
 - [帮助与支持](https://wanglei13975.github.io/gongshi-heduei-site/support/)
 
