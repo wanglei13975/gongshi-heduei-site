@@ -73,6 +73,18 @@ test("salary-gap landing page exposes wage-difference intent and App Store conti
   assert.match(html, /年度订阅/);
 });
 
+test("salary-underpayment landing page exposes high-intent purchase path", async () => {
+  const html = await page("/salary-underpayment");
+  assert.match(html, /工资少发了怎么办/);
+  assert.match(html, /先把差额算清楚/);
+  assert.match(html, /加班小时数/);
+  assert.match(html, /在 App Store 开始记录/);
+  assert.match(html, /ct=github_salary_underpayment/);
+  assert.match(html, /¥6 永久买断/);
+  assert.match(html, /设置 → 解锁完整功能/);
+  assert.match(html, /applicationCategory/);
+});
+
 test("night-shift page explains cross-midnight work and continues to the App Store", async () => {
   const html = await page("/night-shift-pay");
   assert.match(html, /夜班工资怎么算/);
