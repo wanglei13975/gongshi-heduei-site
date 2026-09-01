@@ -43,6 +43,7 @@ export default function SalaryGapPage() {
         <div className="navLinks">
           <a href="/calculator">快速试算</a>
           <a href="/shift-work">倒班核对</a>
+          <a href="/salary-underpayment">工资少发怎么办</a>
           <a href="/">产品介绍</a>
         </div>
       </nav>

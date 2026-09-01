@@ -40,6 +40,7 @@ export default function WageCheckAppPage() {
           <a href="/calculator">快速试算</a>
           <a href="/shift-work">倒班核对</a>
           <a href="/salary-gap">工资差额</a>
+          <a href="/salary-underpayment">工资少发怎么办</a>
           <a href="/support">支持</a>
         </div>
       </nav>

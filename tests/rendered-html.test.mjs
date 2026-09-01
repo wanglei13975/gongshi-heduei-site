@@ -71,6 +71,7 @@ test("salary-gap landing page exposes wage-difference intent and App Store conti
   assert.match(html, /先用网页免费算一次/);
   assert.match(html, /applicationCategory/);
   assert.match(html, /年度订阅/);
+  assert.match(html, /href="\/salary-underpayment"/);
 });
 
 test("salary-underpayment landing page exposes high-intent purchase path", async () => {
@@ -133,6 +134,7 @@ test("wage-check-app page exposes direct App Store intent and purchase path", as
   assert.match(html, /applicationCategory/);
   assert.match(html, /¥6 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
+  assert.match(html, /href="\/salary-underpayment"/);
 });
 
 test("privacy page matches the local-first and StoreKit data model", async () => {
