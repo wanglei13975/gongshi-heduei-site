@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ct=github_mobile_cta&mt=8";
+const appStoreURL = "https://apps.apple.com/cn/app/%E5%B7%A5%E6%97%B6%E6%A0%B8%E5%AF%B9/id6800185417?ppid=2a335c72-49d1-4510-9067-1c9c78518572&ct=github_mobile_cta_cpp&mt=8";
 
 const publicSiteOrigin = process.env.GITHUB_PAGES === "1"
   ? "https://wanglei13975.github.io/gongshi-heduei-site"

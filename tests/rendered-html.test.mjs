@@ -30,7 +30,8 @@ test("product page exposes real value and only approved public routes", async ()
   assert.match(html, /9\/1–9\/25 ¥6 买断/);
   assert.match(html, /设置 → 解锁完整功能/);
   assert.match(html, /apple-itunes-app/);
-  assert.match(html, /ct=github_home/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /ct=github_home_cpp/);
   assert.match(html, /href="\/shift-work"/);
   assert.match(html, /href="\/privacy"/);
   assert.match(html, /href="\/support"/);
@@ -43,7 +44,8 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /仅在浏览器内计算/);
   assert.match(html, /在 App Store 继续核对/);
   assert.match(html, /分享这个计算器/);
-  assert.match(html, /ct=github_calculator/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /ct=github_calculator_cpp/);
   assert.match(html, /常见问题/);
   assert.match(html, /¥6 永久买断/);
   assert.match(html, /复杂规则、完整历史、趋势统计和高级小组件/);
@@ -104,7 +106,8 @@ test("hourly-worker page exposes hourly-pay intent and App Store continuation", 
   assert.match(html, /实际工作/);
   assert.match(html, /工资条/);
   assert.match(html, /App Store 开始记录/);
-  assert.match(html, /github_hourly_worker/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /github_hourly_worker_cpp/);
   assert.match(html, /applicationCategory/);
 });
 
@@ -113,7 +116,8 @@ test("overtime-pay page exposes overtime intent and App Store continuation", asy
   assert.match(html, /加班工资怎么算/);
   assert.match(html, /平时、休息日与节假日/);
   assert.match(html, /App Store 开始记录/);
-  assert.match(html, /github_overtime_pay/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /github_overtime_pay_cpp/);
   assert.match(html, /applicationCategory/);
 });
 
@@ -122,7 +126,8 @@ test("piecework-pay page exposes piecework intent and App Store continuation", a
   assert.match(html, /计件工资怎么算/);
   assert.match(html, /阶梯单价/);
   assert.match(html, /App Store 开始记录/);
-  assert.match(html, /github_piecework_pay/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /github_piecework_pay_cpp/);
   assert.match(html, /applicationCategory/);
 });
 
@@ -132,7 +137,8 @@ test("wage-check-app page exposes direct App Store intent and purchase path", as
   assert.match(html, /免费下载/);
   assert.match(html, /9\/1–9\/25 ¥6 买断/);
   assert.match(html, /工资条/);
-  assert.match(html, /github_wage_check_app/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /github_wage_check_app_cpp/);
   assert.match(html, /applicationCategory/);
   assert.match(html, /¥6 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
