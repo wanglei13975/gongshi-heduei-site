@@ -67,7 +67,8 @@ test("salary-gap landing page exposes wage-difference intent and App Store conti
   assert.match(html, /工资差额/);
   assert.match(html, /加班倍率/);
   assert.match(html, /App Store 开始记录/);
-  assert.doesNotMatch(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /ct=github_salary_gap_cpp/);
   assert.match(html, /先用网页免费算一次/);
   assert.match(html, /applicationCategory/);
   assert.match(html, /年度订阅/);
@@ -80,7 +81,8 @@ test("salary-underpayment landing page exposes high-intent purchase path", async
   assert.match(html, /先把差额算清楚/);
   assert.match(html, /加班小时数/);
   assert.match(html, /在 App Store 开始记录/);
-  assert.match(html, /ct=github_salary_underpayment/);
+  assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
+  assert.match(html, /ct=github_salary_underpayment_cpp/);
   assert.match(html, /¥6 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
   assert.match(html, /applicationCategory/);
