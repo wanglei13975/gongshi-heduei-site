@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="zh-CN"><body>{children}<div className="mobilePurchaseBar" aria-label="限时购买入口">
-    <span><strong>9/1–9/25 ¥6</strong><small>永久买断高级功能</small></span>
+  return <html lang="zh-CN"><body>{children}<div className="mobilePurchaseBar" aria-label="完整功能购买入口">
+    <span><strong>¥28 永久买断</strong><small>永久买断高级功能</small></span>
     <a href={appStoreURL} target="_blank" rel="noreferrer">打开 App Store <span>↗</span></a>
   </div></body></html>;
 }

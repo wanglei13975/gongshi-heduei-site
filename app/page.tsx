@@ -41,7 +41,7 @@ const productStructuredData = {
   downloadUrl: appStoreURL,
   offers: [
     { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录和简单计薪" },
-    { "@type": "Offer", price: "6", priceCurrency: "CNY", description: "2026-09-01 至 2026-09-25 限时永久买断高级功能" },
+    { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断完整功能" },
     { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度自动续费订阅" },
   ],
 };
@@ -80,10 +80,10 @@ export default function Home() {
             <span>本地优先</span><span>无广告</span><span>不追踪</span>
           </div>
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
-            9/1–9/25 ¥6 买断 · 打开 App Store <span>↗</span>
+            ¥28 永久买断 · 打开 App Store <span>↗</span>
           </a>
-          <p className="availability">免费开始记录；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅 · 已上架 App Store</p>
-          <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥6 永久买断。</p>
+          <p className="availability">免费开始记录；完整功能可 ¥28 永久买断；另有 ¥38/年订阅 · 已上架 App Store</p>
+          <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥28 永久买断。</p>
         </div>
         <div className="heroStage" aria-label="工时核对桌面组件预览">
           <div className="orbit orbitOne" />
@@ -143,7 +143,7 @@ export default function Home() {
         <div>
           <p className="eyebrow dark"><span /> 高级功能</p>
           <h2>简单记录免费。<br />复杂工作，也有章法。</h2>
-          <p className="premiumNote">中国区 9 月 1 日至 25 日限时永久买断 ¥6，9 月 26 日起恢复 ¥28；年度订阅 ¥38/年并自动续费。实际价格与可用性以 App Store 最终展示为准。</p>
+          <p className="premiumNote">中国区完整功能可 ¥28 永久买断；年度订阅 ¥38/年并自动续费。实际价格与可用性以 App Store 最终展示为准。</p>
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">
             查看方案并购买 <span>↗</span>
           </a>

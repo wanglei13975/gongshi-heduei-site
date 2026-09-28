@@ -16,7 +16,7 @@ const structuredData = {
     installUrl: appStoreURL,
     offers: [
       { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录和简单计薪" },
-      { "@type": "Offer", price: "6", priceCurrency: "CNY", description: "9 月 1 日至 25 日限时永久买断" },
+      { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断完整功能" },
       { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度订阅" },
     ],
   },
@@ -56,7 +56,7 @@ export default function SalaryUnderpaymentPage() {
           <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">在 App Store 开始记录 <span>↗</span></a>
           <a className="textLink" href="/calculator">先用网页免费算一次 <span>→</span></a>
         </div>
-        <p className="availability">基础记录免费；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年自动续费订阅。</p>
+        <p className="availability">基础记录免费；完整功能可 ¥28 永久买断；另有 ¥38/年自动续费订阅。</p>
       </section>
 
       <section className="intentSteps" aria-labelledby="underpayment-steps-title">
@@ -86,7 +86,7 @@ export default function SalaryUnderpaymentPage() {
         <h2>先免费核对一笔，<br />需要长期记录时再解锁。</h2>
         <p>网页试算只在浏览器本地运行；App 无需注册，工时和工资数据默认保存在你的设备上。</p>
         <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">下载工时核对 <span>↗</span></a>
-        <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥6 永久买断。</p>
+        <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥28 永久买断。</p>
         <p><a className="textLink" href="https://gist.github.com/wanglei13975/9bc6ad826f400276ed7f7e35f0c32bfa" target="_blank" rel="noreferrer">查看工资条核对清单 <span>↗</span></a></p>
         <p className="intentDisclaimer">计算结果仅供个人工时与薪资核对参考，不构成工资发放、税务、社保或劳动法律意见。</p>
       </section>

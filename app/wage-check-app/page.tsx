@@ -13,7 +13,7 @@ const structuredData = {
   installUrl: appStoreURL,
   offers: [
     { "@type": "Offer", price: "0", priceCurrency: "CNY", description: "基础记录与简单计薪" },
-    { "@type": "Offer", price: "6", priceCurrency: "CNY", description: "9 月 1 日至 25 日限时永久买断" },
+    { "@type": "Offer", price: "28", priceCurrency: "CNY", description: "永久买断完整功能" },
     { "@type": "Offer", price: "38", priceCurrency: "CNY", description: "年度订阅" },
   ],
 };
@@ -50,11 +50,11 @@ export default function WageCheckAppPage() {
         <h1>工资核对 App，<br /><em>把每一小时和工资条对上。</em></h1>
         <p className="intentLead">如果你正在找一款工资核对 App，可以先免费记录班次、工时和计件，再按自己的计薪规则算出期望金额，最后输入工资条实发金额，查看差额从哪里来。</p>
         <div className="intentActions">
-          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">9/1–9/25 ¥6 买断 · 免费下载 <span>↗</span></a>
+          <a className="storeCta" href={appStoreURL} target="_blank" rel="noreferrer">¥28 永久买断 · 免费下载 <span>↗</span></a>
           <a className="textLink" href="/calculator">先用网页免费试算 <span>→</span></a>
         </div>
-        <p className="availability">基础记录和简单计薪免费；9 月 1 日至 25 日限时 ¥6 永久买断，之后恢复 ¥28；另有 ¥38/年订阅。</p>
-        <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥6 永久买断。</p>
+        <p className="availability">基础记录和简单计薪免费；完整功能可 ¥28 永久买断；另有 ¥38/年订阅。</p>
+        <p className="purchasePath"><strong>安装后购买路径：</strong>先免费记录一条班次；需要完整核对时，打开“设置 → 解锁完整功能”，选择 App Store 显示的 ¥28 永久买断。</p>
       </section>
 
       <section className="intentSteps" aria-labelledby="wage-check-steps-title">

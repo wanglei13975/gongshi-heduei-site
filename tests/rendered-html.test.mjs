@@ -27,7 +27,7 @@ test("product page exposes real value and only approved public routes", async ()
   assert.match(html, /每一小时/);
   assert.match(html, /工资条能核对/);
   assert.match(html, /免费开始记录/);
-  assert.match(html, /9\/1–9\/25 ¥6 买断/);
+  assert.match(html, /¥28 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
   assert.match(html, /apple-itunes-app/);
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
@@ -47,7 +47,7 @@ test("calculator page exposes local calculation and App Store continuation", asy
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /ct=github_calculator_cpp/);
   assert.match(html, /常见问题/);
-  assert.match(html, /¥6 永久买断/);
+  assert.match(html, /¥28 永久买断/);
   assert.match(html, /复杂规则、完整历史、趋势统计和高级小组件/);
 });
 
@@ -85,7 +85,7 @@ test("salary-underpayment landing page exposes high-intent purchase path", async
   assert.match(html, /在 App Store 开始记录/);
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /ct=github_salary_underpayment_cpp/);
-  assert.match(html, /¥6 永久买断/);
+  assert.match(html, /¥28 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
   assert.match(html, /applicationCategory/);
 });
@@ -135,12 +135,12 @@ test("wage-check-app page exposes direct App Store intent and purchase path", as
   const html = await page("/wage-check-app");
   assert.match(html, /工资核对 App/);
   assert.match(html, /免费下载/);
-  assert.match(html, /9\/1–9\/25 ¥6 买断/);
+  assert.match(html, /¥28 永久买断/);
   assert.match(html, /工资条/);
   assert.match(html, /ppid=2a335c72-49d1-4510-9067-1c9c78518572/);
   assert.match(html, /github_wage_check_app_cpp/);
   assert.match(html, /applicationCategory/);
-  assert.match(html, /¥6 永久买断/);
+  assert.match(html, /¥28 永久买断/);
   assert.match(html, /设置 → 解锁完整功能/);
   assert.match(html, /href="\/salary-underpayment"/);
 });
